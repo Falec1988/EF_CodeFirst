@@ -26,8 +26,12 @@ public class ApplicationDbContext : DbContext
 
         modelBuilder.Entity<Grade>().HasData(
             new Grade { GradeId = 1, GradeName = "A", Section = "1", StudentId = 1 },
-            new Grade { GradeId = 2, GradeName = "B", Section = "1", StudentId = 2 },
-            new Grade { GradeId = 3, GradeName = "C", Section = "2", StudentId = 3 }
+            new Grade { GradeId = 2, GradeName = "B", Section = "2", StudentId = 2 },
+            new Grade { GradeId = 3, GradeName = "C", Section = "3", StudentId = 3 },
+            new Grade { GradeId = 4, GradeName = "D", Section = "4", StudentId = 1 },
+            new Grade { GradeId = 5, GradeName = "E", Section = "5", StudentId = 2 },
+            new Grade { GradeId = 6, GradeName = "F", Section = "6", StudentId = 3 },
+            new Grade { GradeId = 7, GradeName = "G", Section = "7", StudentId = 1 }
         );
     }
 }

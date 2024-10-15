@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EF_CodeFirst.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241015172642_init")]
+    [Migration("20241015175500_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -64,7 +64,8 @@ namespace EF_CodeFirst.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("StudentName")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<float>("Weight")
                         .HasColumnType("real");

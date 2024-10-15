@@ -17,7 +17,7 @@ namespace EF_CodeFirst.Migrations
                 {
                     StudentId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    StudentName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    StudentName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
                     DateOfBirth = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Height = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     Weight = table.Column<float>(type: "real", nullable: false)
